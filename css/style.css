@@ -10,14 +10,17 @@
 #3CDBC0 (Color de fondo de la página)
 #FFFFFF (Color de texto de "Creando diversidad digital") */
 
-
+/* empieza header */
 .header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: fixed;
-    z-index: 990;
-    width: 100;
+    position:fixed;
+    position: relative;
+    top:0;
+}
+.logo {
+    padding-top: 10px;
 }
 nav {
     display: flex;
@@ -29,19 +32,38 @@ nav {
     font-family: var(--font-family-rubik);
     display: flex;
     justify-content: space-around;
-    
+    padding-bottom: 13px;
+    padding-top: 10px;
 }
+.item_1 {
+    padding-right: 20px;
+
+
+}
+/* empieza body */
 .main{
     background-color: var(--color-background);
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    top:50px
+
 }
+
+
 .digital-diversity {
     color: var(--color-text);
     font-size: 30px;
-    
+    font-weight: 800;
+    font-family: var(--font-family-rubik);
+    width: 11ch;
+    text-align: center;
+}
+.digital-diversity:: ::first-line{
+    word-spacing: 1000vw;
+}
+
+@media screen and(min-width: 768px) {
+
 }
